@@ -83,3 +83,35 @@ function copyEmail(){
 
     alert("Email Berhasil Disalin");
 }
+
+const glow =
+document.getElementById("cursor-glow");
+
+document.addEventListener("mousemove",(e)=>{
+
+    glow.style.left =
+    e.clientX + "px";
+
+    glow.style.top =
+    e.clientY + "px";
+
+});
+
+window.addEventListener("load", () => {
+
+    const intro =
+    document.getElementById("intro");
+
+    setTimeout(() => {
+
+        intro.style.opacity = "0";
+
+        setTimeout(() => {
+
+            intro.style.display = "none";
+
+        },1000);
+
+    },2500);
+
+});
