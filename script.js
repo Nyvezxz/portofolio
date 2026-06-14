@@ -110,6 +110,8 @@ window.addEventListener("load", () => {
 
             intro.style.display = "none";
 
+            document.body.classList.add("loaded");
+
         },1000);
 
     },2500);
